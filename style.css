@@ -1,0 +1,553 @@
+body {
+    font-family: 'Afacad Flux';
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    max-width: 100%;
+    height: 600px;
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+/* Fixed Header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 340px;
+    background-color: #fff;
+    z-index: 100;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and Buttons */
+.input-group {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.memory-input-group {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.setting-input-group {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+input[type="text"] {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    text-align: center;
+    flex-grow: 1;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.btn {
+    border: 1px solid #ccc;
+    background-color: #fcfdff;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-sm {
+    font-size: 12px;
+    padding: 4px 6px;
+}
+
+/* Fixed bottom navigation */
+.fixed-bottom {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #f8f9fa;
+    max-width: 360px;
+    z-index: 100;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+.p-2 {
+    padding: 8px;
+    border: 1px solid white;
+}
+
+.p-1 {
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+p{
+    border: 3px dotted powderblue;
+    padding: 9px;
+    font-weight: 900;
+    background: #f5f5f5;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 10px;
+}
+
+.mb-3 {
+    margin-bottom: 12px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the logo image */
+.logo {
+    width: 45px; 
+    height: 45px; 
+    margin-right: 25px; /* Add some space between the logo and text */
+    vertical-align: middle; /* Align the image with the text */
+    align-items: center;
+}
+
+.title {
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #007bff; 
+}
+
+.tab-icon {
+    width: 30px; 
+    height: 30px; 
+    display: inline-block; /* Ensure they remain inline */
+}
+
+
+.nav-link img:hover {
+    opacity: 0.8; /* Dim the icon slightly on hover */
+}
+
+.task-icon {
+    width: 20px;  /* Adjust the width of the icons */
+    padding: 3px;
+    height: 20px; /* Adjust the height of the icons */
+}
+
+.setting-icon {
+    width: 20px;  /* Adjust the width of the icons */
+    padding-left: 18px;
+    height: 20px; /* Adjust the height of the icons */
+}
+
+/* Optional: Style the buttons */
+.btn-light {
+    background-color: transparent; /* Make button background transparent */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+}
+
+/* Optional hover effect for the icons */
+.btn-light:hover img {
+    opacity: 0.8;  /* Change opacity on hover */
+}
+
+/* Scrollable list */
+.scrollable-list {
+    margin-top: 120px; /* Ensure it's below the header */
+    height: calc(100% - 180px); /* Adjust height based on available space minus header and footer */
+    overflow-y: auto; /* Scroll only when necessary */
+    padding: 10px;
+    padding-bottom: 60px; /* Ensure content is not covered by the footer */
+}
+
+
+ul.list-group {
+    padding-left: 0;  /* Remove default padding from ul */
+    margin-left: 0;   /* Remove default margin from ul */
+    list-style-type: none; /* Remove default bullet points */
+}
+
+.usage-label {
+    position: fixed; /* Stick the label to the bottom of the screen, above the footer */
+    bottom: 50px; /* Place it just above the footer */
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    z-index: 99; /* Ensure it stays above other elements but below the footer */
+}
+
+/* Scrollable list for Memory tab */
+.scrollable-list-memory {
+    margin-top: 120px; /* Ensure it's below the header */
+    height: calc(100% - 290px); /* Adjust height to leave room for the usage label and footer */
+    overflow-y: auto; /* Scroll only when necessary */
+    padding: 10px;
+    padding-bottom: 80px; /* Ensure content is not covered by the usage label */
+}
+
+.scrollable-list-setting {
+    margin-top: 120px; /* Ensure it's below the header */
+    height: calc(100% - 290px); /* Adjust height to leave room for the usage label and footer */
+    overflow-y: auto; /* Scroll only when necessary */
+    padding: 10px;
+    padding-bottom: 80px; /* Ensure content is not covered by the usage label */
+}
+
+/* Scrollbar styles for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the scrollbar track */
+    border-radius: 15px; /* Rounded corners for the track */
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(41deg, rgba(219,225,227,0.8576680672268908) 23%, rgba(182,194,197,1) 60%, rgba(90,119,119,0.38147759103641454) 100%); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+
+/* Close button styling */
+.btn-light {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.btn-light img {
+    width: 18px; /* Adjust icon size */
+    height: 18px;
+}
+
+
+.toast {
+    position: fixed; /* Use fixed positioning */
+    top: 50%; /* Center vertically */
+    width: 80%;
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for aesthetics */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 9999; /* Make sure it's above other elements */
+    display: none; /* Hidden by default */
+    animation: fadeInOut 3s; /* Animation for showing and hiding */
+}
+
+/* Animation for fade in and out effect */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+.toast.show {
+    visibility: visible; /* Show the toast */
+    opacity: 1; /* Fully visible */
+}
+
+
+/* Common styling for list group items */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+/* Specific styling for home tab list */
+.list-group {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+
+
+/* Create Group Section */
+.create-group-container {
+    display: flex;
+    justify-content: space-between; /* Align label to left and button to right */
+    align-items: center;
+    padding: 10px 15px;
+    margin-top: 100px; /* Add some space below the header */
+    border: 1px solid #333;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.create-group-label {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #333;
+    font-weight: bold;
+}
+
+.add-group-btn {
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-group-btn img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+}
+
+
+/* Accordion styles */
+.group-accordion {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right:10px;
+    padding: 10px;
+}
+
+
+.group-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.group-buttons {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.group-buttons .btn {
+    margin-left: 10px;
+}
+
+/* Save and Close button styles */
+.save-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Group Header Styles */
+.group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* Editable Group Name */
+.group-header .group-name {
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px dashed transparent;
+    padding: 5px;
+    flex-grow: 1;
+}
+
+.group-name[contenteditable="true"] {
+    border-color: #007bff; /* Highlight editable text when clicked */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Container */
+.group-header .group-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* Save and Close icons */
+.save-btn, .close-btn, .toggle-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.save-btn img, .close-btn img, .toggle-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it’s on top of other content */
+}
+
+.overlay-content {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    position: relative; /* For positioning the close icon */
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* General container for the extension */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Create Group Container */
+
+.create-group-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Group inputs container to stack inputs vertically */
+.group-inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Styling for inputs */
+.create-group-container input[type="url"],
+.create-group-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Align color picker and create group button side by side */
+.group-color-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#groupColorPicker {
+    width: 48%;
+    padding: 9px;
+}
+
+#createGroupButton {
+    width: 48%;
+    padding: 8px;
+    background-color: #dfdede;
+    color: #000000;
+    border: 3px dotted #48b9c7;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Group List Section */
+.group-list-container {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    border:3px dotted steelblue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#groupList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.group-color-picker {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align-last: center;
+}
+
+h3{
+    border :1px solid rgb(170, 186, 247);
+    border-radius: 5px;
+    text-align:center;
+}
+

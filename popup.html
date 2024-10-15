@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesare Tab Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Home Tab Content -->
+    <div id="home" class="tab-content active">
+        <div class="fixed-header">
+            <div class="border p-1">
+                <img src="icon.png" alt="Logo" class="logo"> 
+                <span class="title">Aesare Tab Manager</span>
+                <span>v0.0.1</span>
+            </div>
+            <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn" id="searchButton">
+                        <img src="img/search.png" alt="Find Icon" class="task-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scrollable-list">
+          <ul id="tabs-list" class="list-group">
+            <!-- Tabs will be dynamically listed here -->
+          </ul>
+        </div>
+        <div id="overlay" style="display:none;">
+            <div class="overlay-content">
+                <span id="closeOverlay" class="close-icon">&times;</span>
+                <div id="created-groups-container">
+                    <!-- Dynamically created groups will appear here -->
+                </div>
+            </div>
+        </div>
+        
+      </div>
+
+    <!-- Memory Tab Content -->
+    <div id="memory" class="tab-content" style="display: none;">
+        <div class="fixed-header">
+            <div class="border p-1">
+                <img src="icon.png" alt="Logo" class="logo"> 
+                <span class="title">Aesare Tab Manager</span>
+                <span>v0.0.1</span>
+            </div>
+            <div class="memory-input-group">
+                <input type="text" id="memorySearchInput" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn" id="MemorysearchButton">
+                        <img src="img/search.png" alt="Find Icon" class="task-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scrollable-list-memory">
+            <ul id="memory-list" class="list-group">
+            <!-- Memory usage of opened tabs will be dynamically listed here -->
+            </ul>
+        </div>
+        <div class="usage-label" id="usage"></div>
+    </div>
+
+<!-- Group Tab Content -->
+<div id="group" class="tab-content" style="display: none;">
+    <div class="fixed-header">
+        <div class="border p-1">
+            <img src="icon.png" alt="Logo" class="logo"> 
+            <span class="title">Aesare Tab Manager</span>
+            <span>v0.0.1</span>
+        </div>
+    </div>
+
+    <!-- Editable Text Inputs and Color Picker -->
+    <div class="container">
+        <!-- Create Group Section -->
+        <div id="createGroupContainer" class="create-group-container">
+            <div class="group-inputs-container">
+                <input type="url" id="groupUrlInput" placeholder="URL" />
+                <input type="text" id="groupNameInput" placeholder="Group Name" maxlength="25" />
+                <div class="group-color-and-button">
+                    <select id="groupColorPicker" class="group-color-picker">
+                        <!-- Color options will be dynamically added here -->
+                    </select>
+                    <button id="createGroupButton" class="btn">Group</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Group List Section -->
+        <div id="groupListContainer" class="group-list-container">
+            <h2>Tab Groups</h2>
+            <div id="groupList"></div>
+        </div>
+    </div>
+    
+    
+       
+</div>
+
+    <!-- Other Tabs Content (Memory, Group, Settings) -->
+    
+    <div id="settings" class="tab-content" style="display: none;">
+        <div class="fixed-header">
+            <div class="border p-1">
+                <img src="icon.png" alt="Logo" class="logo"> 
+                <span class="title">Aesare Tab Manager</span>
+                <span>v0.0.1</span>
+            </div>
+            <div class="setting-input-group">
+                <input type="text" id="settingSearchInput" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn" id="SettingsearchButton">
+                        <img src="img/search.png" alt="Find Icon" class="task-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scrollable-list-setting">
+            <ul id="settings-list" class="list-group mt-2"></ul>
+        </div>
+    </div>
+
+
+    <!-- Navigation Tabs -->
+    <div class="fixed-bottom">
+        <div class="row text-center">
+            <div class="col-3 p-2">
+                <a href="#home" class="nav-link">
+                    <img src="img/home.png" class="tab-icon">
+                </a>
+            </div>
+            <div class="col-3 p-2">
+                <a href="#memory" class="nav-link">
+                    <img src="img/memory.png" class="tab-icon">
+                </a>
+            </div>
+            <div class="col-3 p-2">
+                <a href="#group" class="nav-link">
+                    <img src="img/tabs.png" class="tab-icon">
+                </a>
+            </div>
+            <div class="col-3 p-2">
+                <a href="#settings" class="nav-link">
+                    <img src="img/setting.png" class="tab-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="toast" class="toast">
+        <span id="toastMessage"></span>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

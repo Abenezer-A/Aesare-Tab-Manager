@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Manager Extension",
+    "description": "Manage your open tabs efficiently with grouping, search, hibernation, and more.",
+    "version": "1.0",
+    "permissions": ["tabs", "storage", "activeTab", "system.memory", "processes","scripting","tabGroups"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png",
+      "default_title": "Tab Manager"
+      
+    },
+    "host_permissions": [
+    "*://*/*"
+  ],
+    "icons": {
+      "128": "icon.png"
+    }
+  }
+  
