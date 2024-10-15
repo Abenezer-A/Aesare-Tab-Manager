@@ -95,10 +95,10 @@ After installation, you'll see the extension icon in the toolbar next to the add
 
 ---
 
-## Video Tutorial
+## 🎥 Video Tutorial
 Prefer a video walkthrough? Watch the tutorial below to see the installation and use in action!
-([https://img.youtube.com/vi/1H6wanUvzf0/maxresdefault.jpg](https://img.youtube.com/vi/1H6wanUvzf0/maxresdefault.jpg)](https://www.youtube.com/watch?v=1H6wanUvzf0)
-Click the image to watch on Youtube!
+<iframe width="914" height="514" src="https://www.youtube.com/embed/1H6wanUvzf0" title="How to Enable Extension" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ---
 
