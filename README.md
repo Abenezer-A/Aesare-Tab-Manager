@@ -1,4 +1,4 @@
-div align="center">
+<div align="center">
   <img src="https://github.com/user-attachments/assets/347468ac-1a79-49e9-b2b8-51bf3168f91b">
 </div>
 
@@ -9,7 +9,7 @@ div align="center">
 Check out the powerful features of this extension!
 
 <div align="center">
-|:---------------:|:---------------:|:------------------:|
+|----|---|---|
 | ✔️ Tab Listing | ✔️ Add To Group | ✔️ Hibernate Tab |
 | ✔️ Tab Sharing | ✔️ Memory Usage Tracker | ✔️ Save Tab |
 | ✔️ Pin Tab | ✔️ Manage Group | ✔️ Auto Deduplication |
@@ -37,6 +37,7 @@ Welcome! This Guide will walk you through **Installing and using a Chrome extens
 ## 🔧 Prerequisites
 
 ✅ Download The Zip Folder Of The Extension.
+
 ✅ Before Installing The Extension, Make Sure You Enable The Developer Mode:
 
 
@@ -48,8 +49,10 @@ Welcome! This Guide will walk you through **Installing and using a Chrome extens
 ---
 
 ## 🔃 Step 1: Installing a Chrome Extension
+
 1. **Unzip** the File.
-2. **Load Unpack** The Extension By Choosing The Extension Folder.
+2. 
+3. **Load Unpack** The Extension By Choosing The Extension Folder.
    ![Screenshot (4)](https://github.com/user-attachments/assets/ce4ded1b-4986-43b5-8a11-644f9b35a7c8)
 
 
