@@ -9,14 +9,23 @@
 Check out the powerful features of this extension!
 
 ✔️ Tab Listing 
+
 ✔️ Tab Sharing 
+
 ✔️ Add To Group
+
 ✔️ Pin Tab 
-✔️ Memory Usage Tracker 
+
+✔️ Memory Usage Tracker
+
 ✔️ Manage Group
+
 ✔️ Hibernate Tab
+
 ✔️ Save Tab
+
 ✔️ Auto Deduplication 
+
 ✔️ Auto Close Idle Tabs
 
 ---
@@ -41,9 +50,9 @@ Welcome! This Guide will walk you through **Installing and using a Chrome extens
 
 ✅ Download The Zip Folder Of The Extension.
 
-![Screenshot (2)](https://github.com/user-attachments/assets/5774e762-2ee4-4b36-bdc8-e6a05ed70ede)
-
 ✅ Before Installing The Extension, Make Sure You Enable The Developer Mode:
+
+![Screenshot (2)](https://github.com/user-attachments/assets/5774e762-2ee4-4b36-bdc8-e6a05ed70ede)
 
 ![Screenshot (3)](https://github.com/user-attachments/assets/38252c27-16c6-48df-848a-1187da78a7a6)
 
@@ -98,6 +107,10 @@ Click the image to watch on Youtube!
 - Feel free to leave an issue or question in the **Discussion** tab.
 
 ---
+
+## License
+
+[MIT License](https://opensource.org/licenses/MIT)
 
 <div align="center">
   **Developed By Abenezer Alemayehu. All Right Reserved 2024**
