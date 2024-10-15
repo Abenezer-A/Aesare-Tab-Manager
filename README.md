@@ -86,7 +86,7 @@ Once installed, You Can Manage The Extension via The Extension Tab.
 ## 🚀 Step 3: Using The Extension
 After installation, you'll see the extension icon in the toolbar next to the address bar.
 
-1.**click** the extension icon and launch it.
+1. **click** the extension icon and launch it.
 
 2. It has 4 Tabs **Home**, **Memory**, **Group**, **Setting**.
    
@@ -97,7 +97,7 @@ After installation, you'll see the extension icon in the toolbar next to the add
 
 ## Video Tutorial
 Prefer a video walkthrough? Watch the tutorial below to see the installation and use in action!
-[[!How to install](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[[!How to install](https://img.youtube.com/vi/1H6wanUvzf0/maxresdefault.jpg)](https://www.youtube.com/watch?v=1H6wanUvzf0)
 Click the image to watch on Youtube!
 
 ---
