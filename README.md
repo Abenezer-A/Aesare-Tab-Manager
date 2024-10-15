@@ -1,4 +1,4 @@
-![Screenshot (6)](https://github.com/user-attachments/assets/5fb75c8d-ef4e-4659-8a74-85da3b77e2c5)![Screenshot (6)](https://github.com/user-attachments/assets/206128f5-511b-4c56-b34e-5cf5d2d4c6fe)<div align="center">
+div align="center">
   <img src="https://github.com/user-attachments/assets/347468ac-1a79-49e9-b2b8-51bf3168f91b">
 </div>
 
@@ -9,6 +9,7 @@
 Check out the powerful features of this extension!
 
 <div align="center">
+|:---------------:|:---------------:|:------------------:|
 | ✔️ Tab Listing | ✔️ Add To Group | ✔️ Hibernate Tab |
 | ✔️ Tab Sharing | ✔️ Memory Usage Tracker | ✔️ Save Tab |
 | ✔️ Pin Tab | ✔️ Manage Group | ✔️ Auto Deduplication |
