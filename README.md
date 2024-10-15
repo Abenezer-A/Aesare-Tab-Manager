@@ -97,8 +97,8 @@ After installation, you'll see the extension icon in the toolbar next to the add
 
 ## 🎥 Video Tutorial
 Prefer a video walkthrough? Watch the tutorial below to see the installation and use in action!
-<iframe width="914" height="514" src="https://www.youtube.com/embed/1H6wanUvzf0" title="How to Enable Extension" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+https://github.com/user-attachments/assets/3082f818-3c68-4cf9-9dd0-485a7cd06a15
 
 ---
 
