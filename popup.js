@@ -35,7 +35,6 @@ function renderTabs(tabs) {
         let buttonDiv = document.createElement('div');
 
         // Add buttons (add and send)
-        // Add buttons (add and send)
         ['add.png', 'send.png'].forEach(function (icon) {
             let button = document.createElement('button');
             button.className = 'btn btn-light btn-sm';
@@ -284,7 +283,7 @@ function getMemoryInfo() {
         if (media instanceof HTMLMediaElement) {
             if (media.buffered.length > 0) {
                 // Estimate media memory by the buffered size and duration
-                mediaMemory += media.duration * 10 * 1024 * 1024; // Estimation: 10MB per minute as rough memory usage (adjust as needed)
+                mediaMemory += media.duration * 10 * 1024 * 1024; // Estimation: 10MB per minute as rough memory usage.
             } else if (media.readyState >= 2) {
                 // Fallback: Estimate based on media file size
                 const mediaSize = media.videoWidth * media.videoHeight * 3 * media.duration; // Very rough estimate of video memory
