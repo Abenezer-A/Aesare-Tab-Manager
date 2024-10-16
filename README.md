@@ -48,7 +48,7 @@ Welcome! This Guide will walk you through **Installing and using a Chrome extens
 
 ## 🔧 Prerequisites
 
-✅ Download The Zip Folder Of The Extension.
+✅ Download This Repo.
 
 ✅ Before Installing The Extension, Make Sure You Enable The Developer Mode:
 
